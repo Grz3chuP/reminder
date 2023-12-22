@@ -1,9 +1,14 @@
 <div class="container">
-  <div class="mainMenuWrapper d-flex">
-    <button routerLink="termin">Rejestr Terminów</button>
-    <button routerLink="srodki">Rejestr Środków</button>
-    <button routerLink="nowy">Dodaj Nowy</button>
+  <div class="mainMenuTitle">
+    <h1>Rejestrator</h1>
   </div>
-</div>
+
+  <div class="mainMenuWrapper d-flex ">
+    <button class="customButton mx-2" routerLink="termin" routerLinkActive="activeButton">Rejestr Terminów</button>
+    <button class="customButton mx-2" routerLink="srodki" routerLinkActive="activeButton">Rejestr Środków</button>
+    <button class="customButton mx-2" routerLink="nowy" routerLinkActive="activeButton">Dodaj Nowy</button>
+  </div>
+
 
 <router-outlet></router-outlet>
+</div>
